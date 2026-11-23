@@ -123,3 +123,32 @@ body.lightbox-open{overflow:hidden}
 /* HOMEPAGE HERO REPLACED WITH SERIES BANNER */
 .hero-banner-only{min-height:0;height:auto;padding:0;background:#071522;display:block;overflow:hidden}
 .hero-banner-only .hero-banner-image{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:0}
+
+
+/* COLOR CORRECTION: shared page contrast and accent consistency */
+:root{
+  --gold:#d8aa4c;
+  --gold-light:#f3d994;
+  --cream:#f4ecdf;
+  --muted:#c3ced8;
+  --line:rgba(216,170,76,.4);
+}
+.content-hero:after{
+  background:linear-gradient(90deg,rgba(3,10,18,.84),rgba(3,12,21,.56),rgba(3,10,18,.84)),linear-gradient(0deg,#071522 0%,rgba(7,21,34,.16) 58%,rgba(7,21,34,.18) 100%);
+}
+.content-hero h1 em,.theme-feature h2 em,.scripture-panel h2 em,.theme-closing h2 em{color:var(--gold-light)}
+.theme-feature,.facilitator-intro,.contact-card,.resource-card,.theme-principle,.scripture-panel{
+  border-color:rgba(216,170,76,.34);
+}
+.theme-feature,.contact-card,.facilitator-intro{
+  background:linear-gradient(145deg,#142d43,#0a1b2a);
+}
+.theme-principle,.resource-card,.resource-session-grid a{
+  background:linear-gradient(145deg,#10283c,#091725);
+}
+.theme-feature p,.theme-closing p,.theme-principle p,.resource-card p,.resource-intro p,.contact-card p{
+  color:#c8d2dc;
+}
+.primary-nav a:focus-visible,.button:focus-visible,.welcome-links a:focus-visible,.footer-links a:focus-visible{
+  outline:2px solid var(--gold-light);outline-offset:4px;border-radius:2px;
+}
