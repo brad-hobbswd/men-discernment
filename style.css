@@ -119,3 +119,7 @@
 body.lightbox-open{overflow:hidden}
 @media(max-width:850px){.facilitator-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.facilitator-image-grid{grid-template-columns:1fr}.facilitator-image-card{padding:12px}.facilitator-image-card img{max-height:560px}.guide-lightbox{padding:12px}.guide-lightbox img{max-width:96vw;max-height:82vh}}
+
+/* HOMEPAGE HERO REPLACED WITH SERIES BANNER */
+.hero-banner-only{min-height:0;height:auto;padding:0;background:#071522;display:block;overflow:hidden}
+.hero-banner-only .hero-banner-image{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:0}
