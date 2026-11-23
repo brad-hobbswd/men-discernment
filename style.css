@@ -309,3 +309,23 @@ body.facilitator-portal-open{overflow:hidden}
 .content-hero-inner>p:not(.content-deck){text-align:left}
 .about-hero:after,.content-hero:after{background:linear-gradient(90deg,rgba(3,10,18,.9) 0%,rgba(3,12,21,.68) 38%,rgba(3,10,18,.22) 75%,rgba(3,10,18,.12) 100%),linear-gradient(0deg,#071522 0%,rgba(7,21,34,.1) 58%,rgba(7,21,34,.12) 100%)}
 @media(max-width:760px){.about-hero-content,.content-hero-inner{padding-left:clamp(12px,4vw,26px);padding-right:12px}.about-hero-content,.content-hero-inner{text-align:left}.about-hero-content .about-gold-line{margin-left:0}.about-hero-content .about-deck,.content-hero-inner .content-deck{max-width:95%}}
+
+/* INSPIRATION PAGE: complete editorial styling */
+.inspiration-page .content-wrap{display:grid;gap:30px}
+.inspiration-page .theme-feature{position:relative;overflow:hidden;padding:clamp(28px,5.5vw,62px);}
+.inspiration-page .theme-feature:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:linear-gradient(180deg,var(--gold-light),var(--gold),transparent);opacity:.8}
+.inspiration-page .theme-feature h2{max-width:780px;margin:13px 0 25px;font-size:clamp(2.25rem,5vw,3.8rem)}
+.inspiration-page .theme-feature p{max-width:850px;margin:0 0 17px}
+.inspiration-page .theme-feature p:last-child{margin-bottom:0}
+.inspiration-page .scripture-panel{position:relative;overflow:hidden;padding:clamp(28px,5vw,55px);margin:0;background:linear-gradient(125deg,#102b42,#081725 76%);}
+.inspiration-page .scripture-panel:after{content:"";position:absolute;right:-70px;top:-80px;width:240px;height:240px;border:1px solid rgba(216,170,76,.16);border-radius:50%;box-shadow:0 0 0 25px rgba(216,170,76,.035),0 0 0 50px rgba(216,170,76,.025);pointer-events:none}
+.inspiration-page .scripture-panel h2{max-width:800px;margin:14px 0 22px;font-size:clamp(2.1rem,4.5vw,3.5rem);line-height:1.08}
+.inspiration-page .scripture-panel p{max-width:850px;font-size:.95rem;line-height:1.9;color:#d0d9e1;margin:0}
+.inspiration-page .inspiration-source{background:linear-gradient(145deg,#0c2235,#142e45);}
+.inspiration-page .inspiration-source h2{font-size:clamp(2rem,4vw,3.1rem)}
+.inspiration-page .theme-closing{margin:0;padding:clamp(35px,6vw,65px) clamp(20px,4vw,45px);border:1px solid var(--line);border-radius:10px;background:radial-gradient(ellipse at center top,rgba(216,170,76,.09),transparent 65%),#091a29;}
+.inspiration-page .theme-closing h2{font-size:clamp(2.2rem,5vw,3.8rem);margin:10px 0 20px}
+.inspiration-page .theme-closing p{font-size:1rem}
+.inspiration-page .theme-closing .button{margin-top:6px}
+.inspiration-page .content-hero{min-height:410px}
+@media(max-width:760px){.inspiration-page .content-wrap{gap:18px}.inspiration-page .content-hero{min-height:330px}.inspiration-page .theme-feature,.inspiration-page .scripture-panel{padding:24px 20px}.inspiration-page .theme-closing{padding:32px 18px}}
