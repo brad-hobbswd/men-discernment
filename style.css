@@ -159,3 +159,21 @@ body.lightbox-open{overflow:hidden}
 .about-quote .quote-mark,.about-quote p,.about-quote .quote-caption{color:#071522!important}
 .about-quote p{text-shadow:none}
 .about-quote .quote-caption{font-weight:800;letter-spacing:.15em}
+
+/* HOMEPAGE: use Brad's supplied artwork consistently */
+.section-art{display:block;width:min(100%,1000px);height:auto;object-fit:contain;margin:0 auto 28px}
+.section-art-teaching{max-width:760px;margin:0 auto 32px}
+.section-art-sessions{max-width:900px;margin:0 auto 30px}
+.section-art-resources{max-width:900px;margin:0 auto 30px;padding:0 20px}
+.series-divider{padding:28px 0 38px}
+.series-divider img{display:block;width:100%;height:auto;object-fit:contain}
+.session-card .card-mountain{display:block;width:calc(100% + 36px);height:auto;max-height:none;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#071522;margin:12px -18px 10px;position:relative}
+.session-card .card-mountain:before,.session-card .card-mountain:after{content:none}
+.session-card{overflow:hidden}
+@media(max-width:600px){
+ .section-art{margin-bottom:20px}
+ .section-art-teaching{width:100%}
+ .section-art-resources{padding:0 12px}
+ .series-divider{padding:18px 0 28px}
+ .session-card .card-mountain{width:calc(100% + 28px);margin-left:-14px;margin-right:-14px}
+}
