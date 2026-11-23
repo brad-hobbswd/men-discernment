@@ -152,3 +152,10 @@ body.lightbox-open{overflow:hidden}
 .primary-nav a:focus-visible,.button:focus-visible,.welcome-links a:focus-visible,.footer-links a:focus-visible{
   outline:2px solid var(--gold-light);outline-offset:4px;border-radius:2px;
 }
+
+
+/* QUOTE PANEL CONTRAST FIX: dark text over gold */
+.about-quote{background:linear-gradient(120deg,#d3a246,#f0cf7d,#c28c30);color:#071522}
+.about-quote .quote-mark,.about-quote p,.about-quote .quote-caption{color:#071522!important}
+.about-quote p{text-shadow:none}
+.about-quote .quote-caption{font-weight:800;letter-spacing:.15em}
