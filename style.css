@@ -345,3 +345,26 @@ body.facilitator-portal-open{overflow:hidden}
 .dedication-page .theme-closing{margin:0;padding:clamp(35px,6vw,65px) 25px;border:1px solid var(--line);border-radius:10px;background:radial-gradient(ellipse at center top,rgba(216,170,76,.09),transparent 65%),#091a29}
 .dedication-page .theme-closing h2{font-size:clamp(2.2rem,5vw,3.8rem);margin:10px 0 26px}
 @media(max-width:650px){.dedication-page .content-hero{min-height:320px}.dedication-page .dedication-feature,.dedication-page .dedication-to-christ{padding:25px 20px}.dedication-page .dedication-feature p,.dedication-page .dedication-to-christ p{font-size:.93rem;line-height:1.8}.dedication-page .theme-closing{padding:32px 18px}}
+
+/* HOW TO USE THE TEACHING PAGE */
+.how-teach-page .content-hero{min-height:400px}
+.how-teach-page .content-wrap{display:grid;gap:28px}
+.how-teach-page .teaching-feature,.how-teach-page .theme-feature{position:relative;overflow:hidden;padding:clamp(28px,5vw,60px);background:linear-gradient(145deg,#142e45,#091725)}
+.how-teach-page .theme-feature:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,var(--gold-light),var(--gold),transparent)}
+.how-teach-page .theme-feature .content-label{display:block;margin-bottom:16px}
+.how-teach-page .theme-feature h2{font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1.1;margin:12px 0 22px}
+.how-teach-page .theme-feature p{max-width:850px;color:#d1dae2;font-size:1rem;line-height:1.9;margin:0 0 18px}
+.how-teach-page .theme-feature p:last-child{margin-bottom:0}
+.how-teach-page .theme-principles{margin:0;gap:16px}
+.how-teach-page .theme-principle{position:relative;overflow:hidden;min-height:220px;padding:clamp(22px,3vw,32px);background:linear-gradient(145deg,#122b42,#091725);transition:transform .2s,border-color .2s}
+.how-teach-page .theme-principle:hover{transform:translateY(-3px);border-color:rgba(216,170,76,.55)}
+.how-teach-page .theme-principle>span{width:54px;font-size:2rem}
+.how-teach-page .theme-principle h3{font-size:clamp(1.4rem,2.4vw,1.8rem);line-height:1.2}
+.how-teach-page .theme-principle p{font-size:.9rem;line-height:1.8}
+.how-teach-page .scripture-panel{margin:0;padding:clamp(28px,5vw,55px);background:radial-gradient(ellipse at 90% 5%,rgba(216,170,76,.1),transparent 50%),linear-gradient(140deg,#102a40,#081725);position:relative;overflow:hidden}
+.how-teach-page .scripture-panel h2{font-size:clamp(2.1rem,4.5vw,3.5rem);line-height:1.1;margin:14px 0 25px}
+.how-teach-page .scripture-panel p{max-width:850px;font-size:1rem;line-height:1.9;color:#d1dae2;margin:0}
+.how-teach-page .theme-closing{margin:0;padding:clamp(35px,6vw,65px) 25px;border:1px solid var(--line);border-radius:10px;background:radial-gradient(ellipse at center top,rgba(216,170,76,.09),transparent 65%),#091a29}
+.how-teach-page .theme-closing h2{font-size:clamp(2.2rem,5vw,3.8rem);margin:10px 0 20px}
+.how-teach-page .theme-closing p{font-size:1rem;line-height:1.85}
+@media(max-width:650px){.how-teach-page .content-hero{min-height:320px}.how-teach-page .theme-feature,.how-teach-page .scripture-panel{padding:25px 20px}.how-teach-page .theme-principles{grid-template-columns:1fr}.how-teach-page .theme-principle{min-height:0;padding:22px}.how-teach-page .theme-feature p,.how-teach-page .scripture-panel p{font-size:.93rem;line-height:1.8}.how-teach-page .theme-closing{padding:32px 18px}}
