@@ -391,3 +391,15 @@ body.facilitator-portal-open{overflow:hidden}
 .publication-page .theme-closing{margin:0;padding:clamp(35px,6vw,65px) 25px;border:1px solid var(--line);border-radius:10px;background:radial-gradient(ellipse at center top,rgba(216,170,76,.09),transparent 65%),#091a29}
 .publication-page .theme-closing h2{font-size:clamp(2.2rem,5vw,3.8rem);margin:10px 0 25px}
 @media(max-width:650px){.publication-page .content-hero{min-height:320px}.publication-page .publication-overview,.publication-page .publication-details{padding:25px 20px}.publication-page .publication-use-card{padding:23px 20px}.publication-page .publication-overview p,.publication-page .publication-use-card p,.publication-page .publication-details>p{font-size:.93rem;line-height:1.8}.publication-page .theme-closing{padding:32px 18px}}
+
+
+/* HOMEPAGE SECTION ART: blended into the page as quiet dividers */
+.art-divider{position:relative;width:min(82%,980px);margin:12px auto 8px;display:flex;justify-content:center;align-items:center;isolation:isolate}
+.art-divider:before,.art-divider:after{content:"";position:absolute;top:0;bottom:0;width:22%;pointer-events:none;z-index:1}
+.art-divider:before{left:0;background:linear-gradient(90deg,var(--navy),transparent)}
+.art-divider:after{right:0;background:linear-gradient(270deg,var(--navy),transparent)}
+.art-divider img{display:block;width:100%;height:auto;object-fit:contain;opacity:.88;mix-blend-mode:screen;filter:saturate(.88) brightness(.94);mask-image:linear-gradient(90deg,transparent 0%,#000 12%,#000 88%,transparent 100%)}
+.art-divider-teaching{margin-top:0;margin-bottom:-8px}
+.art-divider-sessions{width:min(78%,900px);margin:6px auto 0}
+.art-divider-resources{width:min(78%,900px);margin:8px auto 0}
+@media(max-width:760px){.art-divider{width:96%;margin:4px auto 0}.art-divider img{opacity:.82}.art-divider-teaching{margin-bottom:-2px}.art-divider-sessions,.art-divider-resources{width:96%}}
