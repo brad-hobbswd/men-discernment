@@ -292,3 +292,8 @@ body.guidance-modal-open{overflow:hidden}
 .facilitator-portal-close{position:absolute;top:8px;right:8px;z-index:2;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold,#d5a646);background:#071522;color:#f1d28b;font-size:1.8rem;cursor:pointer}
 body.facilitator-portal-open{overflow:hidden}
 @media(max-width:600px){.facilitator-portal-modal{padding:8px}.facilitator-portal-panel{height:94dvh}.facilitator-portal-close{width:36px;height:36px}}
+
+/* SESSION 2 FACILITATOR GUIDANCE IMAGE */
+.session-guidance-image{display:block;width:100%;margin:0 0 14px;padding:8px;background:#071522;border:1px solid rgba(213,166,70,.35);border-radius:5px;cursor:zoom-in}
+.session-guidance-image img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain;border-radius:3px}
+.session-guidance-image:hover,.session-guidance-image:focus-visible{border-color:var(--gold);outline:2px solid rgba(243,217,148,.22);outline-offset:2px}
