@@ -190,3 +190,25 @@ body.lightbox-open{overflow:hidden}
 .facilitator-lock .lock-panel{max-height:calc(100dvh - 40px);overflow:auto}
 body.facilitator-modal-open{overflow:hidden}
 #facilitator-content{display:block}
+
+/* SESSION ART: preserve the supplied wide artwork at its natural proportions */
+.session-card .card-mountain{
+ display:block!important;
+ width:100%!important;
+ height:auto!important;
+ aspect-ratio:1352 / 719!important;
+ max-height:none!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ margin:12px 0 12px!important;
+ padding:0!important;
+ background:transparent!important;
+ border:0!important;
+ border-radius:0!important;
+ overflow:visible!important;
+}
+.session-card .card-mountain:before,.session-card .card-mountain:after{display:none!important;content:none!important}
+.session-card{padding:18px!important}
+@media(max-width:480px){
+ .session-card .card-mountain{width:100%!important;margin:12px 0!important}
+}
