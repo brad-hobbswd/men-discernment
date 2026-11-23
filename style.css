@@ -270,3 +270,14 @@ body.guidance-modal-open{overflow:hidden}
 .series-divider{width:min(78%,900px)!important;padding:8px 0 20px!important;margin:0 auto!important}
 .series-divider img{width:100%!important;height:auto!important;max-height:none!important}
 @media(max-width:760px){.series-divider{width:96%!important;padding:6px 0 16px!important}}
+
+/* Smooth transition from navigation artwork into purpose section */
+.quick-art-links{width:min(1160px,calc(100% - 44px));margin:0 auto;padding:0 0 24px;gap:14px}
+.quick-art-card{line-height:0}
+.quick-art-card img{vertical-align:middle}
+.welcome{padding:48px 0 70px}
+.welcome .section-kicker{margin-bottom:10px}
+@media(max-width:760px){
+ .quick-art-links{width:calc(100% - 32px);padding-bottom:14px;gap:10px}
+ .welcome{padding:34px 0 52px}
+}
