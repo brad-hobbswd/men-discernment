@@ -224,3 +224,44 @@ body.guidance-modal-open{overflow:hidden}
 .facilitator-reference{border:1px solid rgba(213,166,70,.3);border-radius:8px;padding:24px;background:linear-gradient(145deg,#122b42,#091725)}
 .facilitator-reference .button{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;cursor:pointer}
 @media(max-width:600px){.facilitator-image-modal{padding:10px}.facilitator-image-modal-panel{padding:10px;max-height:calc(100dvh - 20px)}.facilitator-image-close{width:36px;height:36px}}
+
+/* HOMEPAGE NAVIGATION: individual supplied graphics, not the composite overview */
+.quick-art-links{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:16px;
+ align-items:center;
+ padding-top:8px;
+ padding-bottom:12px;
+}
+.quick-art-card{
+ display:block;
+ min-width:0;
+ border:0!important;
+ padding:0!important;
+ margin:0!important;
+ background:transparent!important;
+ box-shadow:none!important;
+ border-radius:0!important;
+ overflow:visible!important;
+ transition:transform .2s ease,filter .2s ease;
+}
+.quick-art-card img{
+ display:block;
+ width:100%;
+ height:auto;
+ object-fit:contain;
+ margin:0;
+ border:0;
+ border-radius:0;
+ box-shadow:none;
+}
+.quick-art-card:hover,.quick-art-card:focus-visible{transform:translateY(-3px);filter:brightness(1.06)}
+.quick-art-card:focus-visible{outline:2px solid #f1d28b;outline-offset:4px}
+.series-divider{width:100%;padding:14px 0 26px;margin:0 auto}
+.series-divider img{display:block;width:100%;height:auto;object-fit:contain;margin:0}
+@media(max-width:760px){
+ .quick-art-links{grid-template-columns:1fr;gap:12px;padding-top:6px;padding-bottom:6px}
+ .quick-art-card{width:min(100%,600px);margin-inline:auto!important}
+ .series-divider{padding:10px 0 20px}
+}
