@@ -42,3 +42,10 @@
 .contact-wrap{max-width:900px}.contact-card{padding:clamp(26px,5vw,52px);background:linear-gradient(145deg,#122b42,#091725);border:1px solid var(--line);border-radius:12px}.contact-card h2{margin:12px 0 18px}.contact-card p{max-width:700px}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.contact-note{margin:24px 0 0;padding:25px 30px;background:#0c2235;border-left:4px solid var(--gold);border-radius:6px}.contact-note>span{font-size:1.6rem;color:var(--gold)}.contact-note h3{font-family:var(--serif);font-size:1.6rem;font-weight:500;margin:8px 0}.contact-note p{font-size:.82rem;color:#bdc8d2;line-height:1.75;margin:0}
 @media(max-width:850px){.resource-cards{grid-template-columns:repeat(2,1fr)}.scripture-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.content-hero{min-height:320px;padding:60px 16px}.content-wrap{width:calc(100% - 32px);padding:45px 0 55px}.theme-principles,.resource-cards,.resource-session-grid{grid-template-columns:1fr}.theme-principle{padding:22px}.scripture-grid{grid-template-columns:1fr 1fr}.contact-actions{flex-direction:column;align-items:flex-start}.resource-card{min-height:190px}}
+
+/* EIGHT-SESSION OVERVIEW IMAGE */
+.series-overview{padding-top:58px;padding-bottom:45px}
+.series-image-link{display:block;border:1px solid rgba(215,170,76,.55);border-radius:14px;overflow:hidden;background:#061421;box-shadow:0 20px 45px rgba(0,0,0,.32);transition:transform .2s ease,border-color .2s ease}
+.series-image-link:hover{transform:translateY(-3px);border-color:#f2ce78}
+.series-image-link img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:600px){.series-overview{padding-top:36px;padding-bottom:30px}.series-image-link{border-radius:8px}}
