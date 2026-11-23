@@ -265,3 +265,8 @@ body.guidance-modal-open{overflow:hidden}
  .quick-art-card{width:min(100%,600px);margin-inline:auto!important}
  .series-divider{padding:10px 0 20px}
 }
+
+/* Reduce the Eight-Week Series divider so it reads as a section accent */
+.series-divider{width:min(78%,900px)!important;padding:8px 0 20px!important;margin:0 auto!important}
+.series-divider img{width:100%!important;height:auto!important;max-height:none!important}
+@media(max-width:760px){.series-divider{width:96%!important;padding:6px 0 16px!important}}
