@@ -212,3 +212,15 @@ body.facilitator-modal-open{overflow:hidden}
 @media(max-width:480px){
  .session-card .card-mountain{width:100%!important;margin:12px 0!important}
 }
+
+/* WEEK ONE: facilitator guidance image popup */
+.facilitator-image-modal[hidden]{display:none!important}
+.facilitator-image-modal{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:rgba(2,7,13,.86);backdrop-filter:blur(7px);overflow:auto}
+.facilitator-image-modal-panel{position:relative;width:min(900px,100%);max-height:calc(100dvh - 40px);padding:18px;background:linear-gradient(145deg,#112b41,#071522);border:1px solid var(--gold);border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.5);overflow:auto;text-align:center}
+.facilitator-image-modal-panel img{display:block;width:100%;height:auto;max-height:calc(100dvh - 130px);object-fit:contain;margin:0 auto;border-radius:4px}
+.facilitator-image-modal-panel p{margin:12px 0 0;color:var(--gold-light);font-size:.7rem;letter-spacing:.14em}
+.facilitator-image-close{position:sticky;top:0;float:right;z-index:2;margin:-8px -8px 8px 8px;width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;background:#071522;color:var(--gold-light);font-size:1.8rem;line-height:1;cursor:pointer}
+body.guidance-modal-open{overflow:hidden}
+.facilitator-reference{border:1px solid rgba(213,166,70,.3);border-radius:8px;padding:24px;background:linear-gradient(145deg,#122b42,#091725)}
+.facilitator-reference .button{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;cursor:pointer}
+@media(max-width:600px){.facilitator-image-modal{padding:10px}.facilitator-image-modal-panel{padding:10px;max-height:calc(100dvh - 20px)}.facilitator-image-close{width:36px;height:36px}}
