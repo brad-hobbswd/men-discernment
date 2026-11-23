@@ -297,3 +297,11 @@ body.facilitator-portal-open{overflow:hidden}
 .session-guidance-image{display:block;width:100%;margin:0 0 14px;padding:8px;background:#071522;border:1px solid rgba(213,166,70,.35);border-radius:5px;cursor:zoom-in}
 .session-guidance-image img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain;border-radius:3px}
 .session-guidance-image:hover,.session-guidance-image:focus-visible{border-color:var(--gold);outline:2px solid rgba(243,217,148,.22);outline-offset:2px}
+
+/* BANNER TEXT PLACEMENT: move titles left to keep clear of people in the artwork */
+.about-hero-content,.content-hero-inner{width:min(100%,1160px);max-width:1160px;margin-left:auto;margin-right:auto;text-align:left;padding-left:clamp(18px,6vw,86px)}
+.about-hero-content .about-gold-line{margin-left:0;margin-right:0}
+.about-hero-content .about-deck,.content-hero-inner .content-deck{margin-left:0;margin-right:0;max-width:620px}
+.content-hero-inner>p:not(.content-deck){text-align:left}
+.about-hero:after,.content-hero:after{background:linear-gradient(90deg,rgba(3,10,18,.9) 0%,rgba(3,12,21,.68) 38%,rgba(3,10,18,.22) 75%,rgba(3,10,18,.12) 100%),linear-gradient(0deg,#071522 0%,rgba(7,21,34,.1) 58%,rgba(7,21,34,.12) 100%)}
+@media(max-width:760px){.about-hero-content,.content-hero-inner{padding-left:clamp(12px,4vw,26px);padding-right:12px}.about-hero-content,.content-hero-inner{text-align:left}.about-hero-content .about-gold-line{margin-left:0}.about-hero-content .about-deck,.content-hero-inner .content-deck{max-width:95%}}
