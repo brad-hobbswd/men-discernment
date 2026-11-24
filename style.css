@@ -785,3 +785,11 @@ body .theme-closing .contact-actions a:hover{filter:brightness(1.06)!important;t
  body .theme-closing > a:not(.unstyled),
  body .theme-closing .contact-actions a{width:min(100%,340px)!important;}
 }
+
+/* About page book cover: integrated float with natural paragraph wrapping */
+.about-book-cover{float:right;width:min(31%,250px);margin:0 0 22px 30px;padding:9px;background:linear-gradient(145deg,rgba(213,166,70,.45),rgba(213,166,70,.12));border:1px solid rgba(213,166,70,.42);border-radius:9px;box-shadow:0 18px 38px rgba(0,0,0,.38);overflow:hidden;}
+.about-book-cover img{display:block;width:100%;height:auto;border-radius:4px;box-shadow:0 4px 16px rgba(0,0,0,.28);}
+.about-book-cover figcaption{font-size:.58rem;line-height:1.45;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);text-align:center;padding:10px 4px 2px;font-weight:700;}
+.about-intro-card::after{content:"";display:block;clear:both;}
+@media(max-width:760px){.about-book-cover{float:none;width:min(65%,290px);margin:25px auto 30px;}}
+@media(max-width:480px){.about-book-cover{width:min(78%,270px);}}
