@@ -447,3 +447,12 @@ body.facilitator-portal-open{overflow:hidden}
 .sessions-preview-link-text small{font-size:.72rem;color:#b7c4d0}
 .sessions-preview-arrow{margin-left:auto;color:var(--gold-light);font-size:1.3rem}
 @media(max-width:760px){.sessions-preview{width:calc(100% - 28px);margin:32px auto 40px;padding:25px 22px}.sessions-preview-inner{align-items:flex-start;flex-direction:column;gap:24px}.sessions-preview h2{font-size:clamp(2.3rem,11vw,3.3rem)}.sessions-preview-link{width:100%;min-width:0;padding:15px 16px}.sessions-preview:after{right:-2%;top:20%;font-size:9rem}}
+
+
+/* HOMEPAGE ARTWORK CORRECTION: full contrast, compact scale, balanced spacing */
+.homepage-art-row{width:min(1080px,calc(100% - 56px));margin:16px auto 12px;gap:12px;align-items:center}
+.homepage-art-row .art-divider{max-width:360px;margin:0 auto;overflow:visible}
+.homepage-art-row .art-divider img{display:block;width:100%;height:auto;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;mask-image:none!important;-webkit-mask-image:none!important;transition:transform .22s ease,filter .22s ease}
+.homepage-art-row .art-divider:hover img{opacity:1!important;filter:brightness(1.04)!important;transform:translateY(-2px)}
+.welcome{padding:56px 0 85px}
+@media(max-width:760px){.homepage-art-row{width:calc(100% - 32px);grid-template-columns:1fr;gap:10px;margin:14px auto 8px}.homepage-art-row .art-divider{max-width:440px}.welcome{padding:38px 0 60px}}
