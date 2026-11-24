@@ -521,3 +521,59 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <script>document.addEventListener('DOMContentLoaded',()=>{const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.primary-nav');if(!toggle||!nav)return;toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);toggle.setAttribute('aria-label',open?'Open navigation':'Close navigation')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));});</script>
+<script>
+/* Popup handlers for facilitator images and the portal */
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("guide-lightbox");
+  const popupImage = document.getElementById("guide-lightbox-image");
+  const popupCaption = document.getElementById("guide-lightbox-caption");
+  const close = document.querySelector(".guide-lightbox-close");
+
+  function closePopup() {
+    if (!popup) return;
+    popup.hidden = true;
+    popup.style.display = "none";
+    if (popupImage) popupImage.src = "";
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("[data-guide-image]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (!popup || !popupImage) return;
+      const img = button.querySelector("img");
+      popupImage.src = button.getAttribute("data-guide-image");
+      popupImage.alt = img ? img.alt : "Facilitator guidance image";
+      if (popupCaption) popupCaption.textContent = img ? img.alt : "";
+      popup.hidden = false;
+      popup.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (close) close.addEventListener("click", closePopup);
+  if (popup) popup.addEventListener("click", function (event) {
+    if (event.target === popup) closePopup();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && popup && !popup.hidden) closePopup();
+  });
+
+  const portal = document.getElementById("facilitator-portal-modal");
+  const portalClose = document.querySelector(".facilitator-portal-close");
+  document.querySelectorAll(".facilitator-portal-link").forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (portal) { portal.hidden = false; portal.style.display = "flex"; }
+    });
+  });
+  function closePortal() {
+    if (portal) { portal.hidden = true; portal.style.display = "none"; }
+  }
+  if (portalClose) portalClose.addEventListener("click", closePortal);
+  if (portal) portal.addEventListener("click", function (event) {
+    if (event.target === portal) closePortal();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && portal && !portal.hidden) closePortal();
+  });
+});
+</script>
