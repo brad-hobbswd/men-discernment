@@ -580,3 +580,11 @@ html{scroll-padding-top:92px}
 .theme-closing .contact-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px;margin:0 auto;width:100%;}
 .theme-closing .contact-actions .button{margin:0;min-height:48px;display:inline-flex;align-items:center;justify-content:center;}
 @media(max-width:600px){.theme-closing{padding:32px 16px 38px}.theme-closing h2{font-size:clamp(1.85rem,8vw,2.45rem)}.theme-closing .contact-actions{flex-direction:column;align-items:stretch;max-width:340px}.theme-closing .contact-actions .button{width:100%;}}
+
+/* Homepage resource library CTA matches the resource rows */
+.resource-list a.resource-more{display:flex;align-items:center;justify-content:flex-start;gap:16px;padding:18px 16px;margin-top:12px;min-height:60px;border:1px solid var(--line);border-radius:4px;background:transparent;text-decoration:none;box-sizing:border-box;}
+.resource-list a.resource-more .resource-symbol{flex:0 0 22px;width:22px;text-align:center;line-height:1;}
+.resource-list a.resource-more .resource-more-label{flex:1;min-width:0;color:var(--gold-light);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;}
+.resource-list a.resource-more>b{flex:0 0 auto;color:var(--gold-light);margin-left:auto;}
+.resource-list a.resource-more:hover{border-color:var(--gold);background:rgba(213,166,70,.045);}
+@media(max-width:600px){.resource-list a.resource-more{padding:15px 12px;gap:12px}.resource-list a.resource-more .resource-more-label{font-size:.66rem;letter-spacing:.06em}}
