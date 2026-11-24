@@ -804,3 +804,9 @@ body .theme-closing .contact-actions a:hover{filter:brightness(1.06)!important;t
 @media(max-width:900px){.hero-banner-only + .welcome{padding-top:clamp(95px,13vw,125px)!important;}}
 @media(max-width:650px){.hero-banner-only + .welcome{padding-top:clamp(72px,15vw,100px)!important;}}
 @media(max-width:380px){.hero-banner-only + .welcome{padding-top:72px!important;}}
+
+/* Homepage: bring Purpose and Focused Path together as one continuous section */
+body:has(.hero-banner-only) .welcome{padding-bottom:clamp(28px,4vw,42px)!important;}
+body:has(.hero-banner-only) .welcome + .pathway{padding-top:clamp(32px,4vw,46px)!important;margin-top:0!important;border-top:0!important;}
+body:has(.hero-banner-only) .welcome + .pathway .section-heading{margin-bottom:clamp(24px,3vw,34px)!important;}
+@media(max-width:650px){body:has(.hero-banner-only) .welcome{padding-bottom:28px!important;}body:has(.hero-banner-only) .welcome + .pathway{padding-top:28px!important;}body:has(.hero-banner-only) .welcome + .pathway .section-heading{margin-bottom:22px!important;}}
