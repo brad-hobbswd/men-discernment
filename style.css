@@ -417,3 +417,13 @@ body.facilitator-portal-open{overflow:hidden}
 /* CONTENT HERO LEFT ALIGNMENT: match internal pages */
 .how-teach-page .content-hero-inner,body.content-page:not(.homepage) .content-hero-inner{width:min(1120px,100%);max-width:1120px;text-align:left;margin:0 auto}
 .how-teach-page .content-hero,body.content-page:not(.homepage) .content-hero{justify-content:flex-start}
+
+
+/* Dedicated curriculum page and homepage sessions preview */
+.sessions-preview .button-gold{display:inline-block;margin-top:18px;padding:12px 22px;border-radius:3px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#071522;font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 7px 24px rgba(0,0,0,.22)}
+.sessions-preview .button-gold:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.sessions-page .sessions{padding:24px 0 20px}
+.sessions-page .sessions-content{width:min(1200px,calc(100% - 36px));margin:0 auto;padding:38px 0 70px}
+.sessions-page .session-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media(max-width:980px){.sessions-page .session-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.sessions-page .session-grid{grid-template-columns:1fr}}
