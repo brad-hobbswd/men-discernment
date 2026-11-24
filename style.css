@@ -810,3 +810,10 @@ body:has(.hero-banner-only) .welcome{padding-bottom:clamp(28px,4vw,42px)!importa
 body:has(.hero-banner-only) .welcome + .pathway{padding-top:clamp(32px,4vw,46px)!important;margin-top:0!important;border-top:0!important;}
 body:has(.hero-banner-only) .welcome + .pathway .section-heading{margin-bottom:clamp(24px,3vw,34px)!important;}
 @media(max-width:650px){body:has(.hero-banner-only) .welcome{padding-bottom:28px!important;}body:has(.hero-banner-only) .welcome + .pathway{padding-top:28px!important;}body:has(.hero-banner-only) .welcome + .pathway .section-heading{margin-bottom:22px!important;}}
+
+/* Explicit spacer replacing the removed homepage graphic navigation row */
+body:has(.hero-banner-only) .banner-content-spacer{display:block!important;width:100%;height:clamp(64px,8vw,112px)!important;}
+body:has(.hero-banner-only) .welcome{padding-top:0!important;}
+@media(max-width:900px){body:has(.hero-banner-only) .banner-content-spacer{height:clamp(58px,9vw,90px)!important;}}
+@media(max-width:650px){body:has(.hero-banner-only) .banner-content-spacer{height:clamp(48px,12vw,76px)!important;}}
+@media(max-width:380px){body:has(.hero-banner-only) .banner-content-spacer{height:48px!important;}}
