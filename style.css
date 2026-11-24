@@ -599,3 +599,13 @@ html{scroll-padding-top:92px}
  .homepage-art-row{width:calc(100% - 24px);gap:8px;margin:12px auto 16px;}
  .homepage-art-row .art-divider img{max-height:135px;}
 }
+
+/* HARD MOBILE SIZE OVERRIDE FOR HOMEPAGE ART NAV */
+@media screen and (max-width:760px){
+ body .homepage-art-row{display:grid!important;grid-template-columns:1fr!important;width:calc(100% - 24px)!important;max-width:520px!important;gap:8px!important;margin:10px auto 14px!important;}
+ body .homepage-art-row a.art-divider{display:flex!important;width:100%!important;height:clamp(88px,23vw,128px)!important;max-height:128px!important;overflow:hidden!important;align-items:center!important;justify-content:center!important;}
+ body .homepage-art-row a.art-divider img{display:block!important;width:100%!important;height:100%!important;max-height:none!important;max-width:none!important;object-fit:contain!important;object-position:center!important;margin:0!important;padding:0!important;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;mask-image:none!important;}
+}
+@media screen and (max-width:430px){
+ body .homepage-art-row a.art-divider{height:clamp(78px,21vw,108px)!important;max-height:108px!important;}
+}
