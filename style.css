@@ -588,3 +588,14 @@ html{scroll-padding-top:92px}
 .resource-list a.resource-more>b{flex:0 0 auto;color:var(--gold-light);margin-left:auto;}
 .resource-list a.resource-more:hover{border-color:var(--gold);background:rgba(213,166,70,.045);}
 @media(max-width:600px){.resource-list a.resource-more{padding:15px 12px;gap:12px}.resource-list a.resource-more .resource-more-label{font-size:.66rem;letter-spacing:.06em}}
+
+/* Compact homepage navigation graphics on phones */
+@media(max-width:760px){
+ .homepage-art-row{grid-template-columns:1fr;width:calc(100% - 28px);gap:10px;margin:14px auto 20px;}
+ .homepage-art-row .art-divider{width:100%;max-width:480px;margin:0 auto;display:block;}
+ .homepage-art-row .art-divider img{display:block;width:100%;height:auto;max-height:155px;object-fit:contain;opacity:.72;filter:none;mix-blend-mode:normal;mask-image:none;}
+}
+@media(max-width:430px){
+ .homepage-art-row{width:calc(100% - 24px);gap:8px;margin:12px auto 16px;}
+ .homepage-art-row .art-divider img{max-height:135px;}
+}
