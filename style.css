@@ -793,3 +793,7 @@ body .theme-closing .contact-actions a:hover{filter:brightness(1.06)!important;t
 .about-intro-card::after{content:"";display:block;clear:both;}
 @media(max-width:760px){.about-book-cover{float:none;width:min(65%,290px);margin:25px auto 30px;}}
 @media(max-width:480px){.about-book-cover{width:min(78%,270px);}}
+
+/* Homepage: preserve intentional breathing room after the banner now that graphic links are removed */
+.hero-banner-only + .welcome{padding-top:clamp(130px,14vw,190px);}
+@media(max-width:760px){.hero-banner-only + .welcome{padding-top:clamp(105px,19vw,145px);}}
