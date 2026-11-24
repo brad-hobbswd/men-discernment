@@ -572,3 +572,11 @@ html{scroll-padding-top:92px}
 .unified-footer-bottom a{color:var(--gold-light)}
 @media(max-width:900px){.site-header{padding:12px 20px;flex-wrap:wrap}.menu-toggle{display:block;cursor:pointer}.primary-nav{display:none;flex-basis:100%;width:100%;padding:12px 0 8px;flex-direction:column;align-items:stretch;gap:0}.primary-nav.open{display:flex}.primary-nav a{padding:12px 8px;border-top:1px solid rgba(213,166,70,.12);text-align:center}.brand-mark{width:45px;height:36px}.brand strong{font-size:1.25rem}}
 @media(max-width:650px){.unified-footer{padding:42px 16px 22px}.unified-footer .footer-brand{font-size:1.45rem}.unified-footer .footer-nav{gap:8px;margin-bottom:24px}.unified-footer .footer-nav a{padding:8px 11px;font-size:.62rem}.unified-footer-bottom{flex-direction:column;gap:10px}}
+
+/* Fix closing CTA alignment and spacing across content pages */
+.theme-closing{width:100%;text-align:center;margin:clamp(28px,5vw,64px) auto 0;padding:clamp(30px,5vw,58px) clamp(18px,4vw,32px) clamp(35px,5vw,60px);border-top:1px solid rgba(213,166,70,.28);}
+.theme-closing h2{max-width:900px;margin:0 auto;font-size:clamp(2rem,4vw,3.25rem);line-height:1.14;text-wrap:balance;}
+.theme-closing p{max-width:680px;margin:20px auto 26px;}
+.theme-closing .contact-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px;margin:0 auto;width:100%;}
+.theme-closing .contact-actions .button{margin:0;min-height:48px;display:inline-flex;align-items:center;justify-content:center;}
+@media(max-width:600px){.theme-closing{padding:32px 16px 38px}.theme-closing h2{font-size:clamp(1.85rem,8vw,2.45rem)}.theme-closing .contact-actions{flex-direction:column;align-items:stretch;max-width:340px}.theme-closing .contact-actions .button{width:100%;}}
