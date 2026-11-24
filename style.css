@@ -667,3 +667,62 @@ html{scroll-padding-top:92px}
   .homepage-art-row{width:calc(100% - 12px)!important;gap:2px!important}
   .homepage-art-row a.art-divider img{height:clamp(44px,16vw,60px)!important}
 }
+
+/* Unified, centered closing panels across the content pages */
+body.content-page .theme-closing{
+  box-sizing:border-box;
+  width:100%;
+  margin:clamp(24px,4vw,48px) auto 0!important;
+  padding:clamp(30px,5vw,58px) clamp(18px,4vw,42px)!important;
+  border:1px solid var(--line)!important;
+  border-radius:12px!important;
+  background:radial-gradient(ellipse at center top,rgba(216,170,76,.09),transparent 65%),#091a29!important;
+  text-align:center!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:0!important;
+}
+body.content-page .theme-closing h2{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto 18px!important;
+  text-align:center!important;
+  line-height:1.12!important;
+  text-wrap:balance;
+}
+body.content-page .theme-closing p{
+  max-width:760px!important;
+  margin:0 auto 26px!important;
+  text-align:center!important;
+}
+body.content-page .theme-closing .contact-actions{
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0 auto!important;
+  gap:12px!important;
+}
+body.content-page .theme-closing > .button,
+body.content-page .theme-closing .contact-actions .button{
+  display:inline-flex!important;
+  width:auto!important;
+  min-width:180px;
+  min-height:48px;
+  align-items:center!important;
+  justify-content:center!important;
+  margin:0!important;
+  text-align:center!important;
+}
+body.content-page .theme-closing .content-label{margin-bottom:12px;text-align:center}
+@media(max-width:600px){
+  body.content-page .theme-closing{padding:30px 18px!important}
+  body.content-page .theme-closing .contact-actions{flex-direction:column!important;align-items:center!important}
+  body.content-page .theme-closing > .button,
+  body.content-page .theme-closing .contact-actions .button{width:min(100%,340px)!important}
+}
