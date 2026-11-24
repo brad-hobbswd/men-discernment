@@ -403,3 +403,12 @@ body.facilitator-portal-open{overflow:hidden}
 .art-divider-sessions{width:min(78%,900px);margin:6px auto 0}
 .art-divider-resources{width:min(78%,900px);margin:8px auto 0}
 @media(max-width:760px){.art-divider{width:96%;margin:4px auto 0}.art-divider img{opacity:.82}.art-divider-teaching{margin-bottom:-2px}.art-divider-sessions,.art-divider-resources{width:96%}}
+
+
+/* HOMEPAGE ARTWORK: keep all three section banners together beneath the main banner and fade into the background */
+.homepage-art-row{width:min(1160px,calc(100% - 44px));margin:22px auto 18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:center}
+.homepage-art-row .art-divider{width:100%;margin:0;padding:0;overflow:hidden}
+.homepage-art-row .art-divider:before,.homepage-art-row .art-divider:after{display:none}
+.homepage-art-row .art-divider img{width:100%;opacity:.48;filter:saturate(.7) brightness(.78);mix-blend-mode:screen;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.55) 5%,#000 20%,#000 80%,rgba(0,0,0,.55) 95%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 12%,#000 88%,transparent 100%);mask-composite:intersect;transition:opacity .25s ease,filter .25s ease}
+.homepage-art-row .art-divider:hover img{opacity:.65;filter:saturate(.85) brightness(.9)}
+@media(max-width:760px){.homepage-art-row{grid-template-columns:1fr;width:calc(100% - 28px);gap:5px;margin:10px auto 12px}.homepage-art-row .art-divider img{opacity:.42}}
