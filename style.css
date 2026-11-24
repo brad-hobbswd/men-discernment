@@ -476,3 +476,10 @@ img,video,svg{max-width:100%}html,body{width:100%;overflow-x:hidden}body{overflo
 @media(max-width:900px){.homepage-art-row{width:calc(100% - 48px);gap:10px}.homepage-art-row .art-divider{max-width:280px}}
 @media(max-width:650px){.homepage-art-row{grid-template-columns:1fr;width:calc(100% - 28px);gap:5px;margin:8px auto 10px}.homepage-art-row .art-divider{max-width:320px}.homepage-art-row .art-divider img{width:100%}}
 @media(max-width:380px){.homepage-art-row{width:calc(100% - 20px);gap:2px}.homepage-art-row .art-divider{max-width:285px}}
+
+
+/* Left-align banner text on Publication, Dedication, and Inspiration */
+.publication-page .content-hero-inner,.dedication-page .content-hero-inner,.inspiration-page .content-hero-inner{width:min(1120px,100%);max-width:1120px;text-align:left;margin:0 auto;padding-left:clamp(20px,5vw,72px);padding-right:20px}
+.publication-page .content-deck,.dedication-page .content-deck,.inspiration-page .content-deck{margin-left:0;margin-right:0;max-width:720px}
+.publication-page .content-hero,.dedication-page .content-hero,.inspiration-page .content-hero{justify-content:flex-start}
+@media(max-width:650px){.publication-page .content-hero-inner,.dedication-page .content-hero-inner,.inspiration-page .content-hero-inner{padding-left:18px;padding-right:18px}}
