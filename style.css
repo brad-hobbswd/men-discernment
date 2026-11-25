@@ -985,3 +985,25 @@ body:has(.hero-banner-only) .pathway-grid .step-number,
 body:has(.hero-banner-only) .pathway-grid h3{
   font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;
 }
+
+/* Fix pathway card flex compression: keep numbered labels on one line */
+body:has(.hero-banner-only) .pathway-grid article{overflow:hidden!important;}
+body:has(.hero-banner-only) .pathway-grid .step-number{
+  display:block!important;flex:0 0 52px!important;min-width:52px!important;
+  width:52px!important;white-space:nowrap!important;word-break:normal!important;
+  overflow-wrap:normal!important;line-height:1.15!important;text-align:center!important;
+  box-sizing:border-box!important;padding:0 12px 0 0!important;
+}
+body:has(.hero-banner-only) .pathway-grid .step-icon{
+  flex:0 0 72px!important;min-width:72px!important;width:72px!important;
+  box-sizing:border-box!important;
+}
+body:has(.hero-banner-only) .pathway-grid h3{flex:1 1 auto!important;min-width:0!important;}
+@media(max-width:650px){
+ body:has(.hero-banner-only) .pathway-grid .step-number{flex-basis:36px!important;min-width:36px!important;width:36px!important;padding-right:5px!important;font-size:1.15rem!important;}
+ body:has(.hero-banner-only) .pathway-grid .step-icon{flex-basis:40px!important;min-width:40px!important;width:40px!important;padding-right:5px!important;}
+}
+@media(max-width:390px){
+ body:has(.hero-banner-only) .pathway-grid .step-number{flex-basis:32px!important;min-width:32px!important;width:32px!important;font-size:1rem!important;}
+ body:has(.hero-banner-only) .pathway-grid .step-icon{flex-basis:34px!important;min-width:34px!important;width:34px!important;}
+}
