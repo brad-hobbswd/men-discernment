@@ -1167,3 +1167,65 @@ body:has(.hero-banner-only) .pathway-grid h3{
 .sessions-preview-link-text small{font-size:.75rem!important;line-height:1.45!important;}
 .sessions-preview-arrow{font-size:1.45rem!important;}
 @media(max-width:760px){.sessions-preview{padding:28px 22px!important;}.sessions-preview-inner{gap:26px!important;}.sessions-preview h2{font-size:clamp(2.5rem,10vw,3.5rem)!important;}.sessions-preview-link{padding:17px 16px!important;}.sessions-preview-count{font-size:2.65rem!important;}}
+
+/* Beyond the Reading: curated resource area */
+.resources{
+ padding:clamp(68px,8vw,112px) 0!important;
+ background:linear-gradient(180deg,#0c2133 0%,#091927 100%)!important;
+ border-top:1px solid rgba(218,177,86,.24)!important;
+}
+.resource-layout{
+ grid-template-columns:minmax(270px,.78fr) minmax(0,1.22fr)!important;
+ gap:clamp(38px,6vw,88px)!important;
+ align-items:center!important;
+}
+.resource-layout>div:first-child{position:relative;padding-left:24px!important;}
+.resource-layout>div:first-child:before{
+ content:"";position:absolute;left:0;top:5px;bottom:8px;width:2px;
+ background:linear-gradient(180deg,#f0ce7b,#b77a25,transparent);
+}
+.resource-layout .section-kicker{margin-bottom:18px!important;letter-spacing:.22em!important;}
+.resource-layout h2{font-size:clamp(2.7rem,5vw,4.5rem)!important;line-height:1.03!important;margin-bottom:20px!important;}
+.resource-layout h2 em{color:#e9c36b!important;}
+.resource-layout>div:first-child p{max-width:420px!important;font-size:1.03rem!important;line-height:1.8!important;color:#c4d0dc!important;}
+.resource-list{border:0!important;display:grid!important;gap:10px!important;}
+.resource-list>a{
+ display:grid!important;grid-template-columns:42px minmax(0,1fr) 28px!important;
+ align-items:center!important;gap:16px!important;
+ padding:19px 22px!important;border:1px solid rgba(218,177,86,.24)!important;
+ border-radius:8px!important;
+ background:linear-gradient(110deg,rgba(18,43,64,.86),rgba(7,22,34,.9))!important;
+ transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease!important;
+}
+.resource-list>a:hover{
+ transform:translateX(4px)!important;border-color:rgba(232,192,99,.65)!important;
+ background:linear-gradient(110deg,rgba(26,51,72,.96),rgba(9,25,38,.96))!important;
+ box-shadow:0 8px 22px rgba(0,0,0,.16),0 0 13px rgba(220,175,75,.07)!important;
+}
+.resource-list .resource-symbol{
+ display:flex!important;align-items:center;justify-content:center;width:38px;height:38px;
+ border:1px solid rgba(218,177,86,.32);border-radius:50%;
+ background:rgba(218,177,86,.06);font-size:1.05rem!important;
+}
+.resource-list strong{font-size:clamp(1.12rem,1.6vw,1.4rem)!important;color:#f1e6d3!important;margin-bottom:4px!important;}
+.resource-list small{font-size:.78rem!important;line-height:1.5!important;color:#b7c5d3!important;}
+.resource-list a>b{font-size:1.15rem!important;transition:transform .2s ease!important;}
+.resource-list a:hover>b{transform:translate(3px,-3px)!important;}
+.resource-list .resource-more{
+ margin-top:7px!important;display:grid!important;grid-template-columns:42px minmax(0,1fr) 28px!important;
+ padding:18px 22px!important;border-color:rgba(218,177,86,.48)!important;
+ background:linear-gradient(120deg,rgba(214,168,66,.1),rgba(8,24,37,.92))!important;
+}
+.resource-list .resource-more-label{font-size:.75rem!important;font-weight:700!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#edc663!important;}
+@media(max-width:760px){
+ .resources{padding:58px 0!important;}
+ .resource-layout{grid-template-columns:1fr!important;gap:32px!important;}
+ .resource-layout>div:first-child{padding-left:18px!important;}
+ .resource-layout h2{font-size:clamp(2.5rem,10vw,3.5rem)!important;}
+ .resource-list>a{grid-template-columns:36px minmax(0,1fr) 24px!important;padding:15px 14px!important;gap:12px!important;}
+ .resource-list .resource-symbol{width:34px;height:34px;}
+ .resource-list strong{font-size:1.15rem!important;}
+ .resource-list small{font-size:.72rem!important;}
+ .resource-list .resource-more{grid-template-columns:36px minmax(0,1fr) 24px!important;padding:15px 14px!important;}
+}
+@media(prefers-reduced-motion:reduce){.resource-list>a{transition:none!important}.resource-list>a:hover{transform:none!important;}}
