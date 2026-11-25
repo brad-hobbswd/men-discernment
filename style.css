@@ -1245,3 +1245,20 @@ body:has(.hero-banner-only) .sessions-preview{
  body:has(.hero-banner-only) .pathway{padding-bottom:28px!important;}
  body:has(.hero-banner-only) .sessions-preview{margin-top:20px!important;}
 }
+
+/* Tighten the bottom of the resource section and its transition into the footer */
+body:has(.hero-banner-only) .resources{
+ padding-bottom:clamp(24px,3vw,38px)!important;
+ margin-bottom:0!important;
+}
+body:has(.hero-banner-only) .site-footer.unified-footer{
+ margin-top:0!important;
+ padding-top:30px!important;
+}
+body:has(.hero-banner-only) .resources .resource-layout{
+ margin-bottom:0!important;
+}
+@media(max-width:760px){
+ body:has(.hero-banner-only) .resources{padding-bottom:24px!important;}
+ body:has(.hero-banner-only) .site-footer.unified-footer{padding-top:24px!important;}
+}
